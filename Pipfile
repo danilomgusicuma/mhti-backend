@@ -7,10 +7,10 @@ name = "pypi"
 djangorestframework = "*"
 django-cors-headers = "*"
 django-heroku = "*"
-django = "*"
 heroku = "*"
 python-decouple = "*"
 tensorflow-cpu = "*"
+django = "==4.0.4"
 
 [dev-packages]
 
