@@ -8,6 +8,9 @@ tensorflow = "*"
 djangorestframework = "*"
 django-cors-headers = "*"
 django-heroku = "*"
+django = "*"
+heroku = "*"
+python-decouple = "*"
 
 [dev-packages]
 
