@@ -4,13 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-tensorflow = "*"
 djangorestframework = "*"
 django-cors-headers = "*"
 django-heroku = "*"
 django = "*"
 heroku = "*"
 python-decouple = "*"
+tensorflow-cpu = "*"
 
 [dev-packages]
 
