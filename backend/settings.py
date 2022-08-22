@@ -15,9 +15,6 @@ import os
 import dj_database_url
 import django_heroku
 
-open('static/rest_framework/css/bootstrap-theme.min.css.map', 'w')
-open('static/rest_framework/css/bootstrap.min.css.map', 'w')
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
