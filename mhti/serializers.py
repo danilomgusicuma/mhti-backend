@@ -15,7 +15,6 @@ class EmployeeAnswerSerializer(serializers.ModelSerializer):
   hasFamilyHistory = serializers.BooleanField()
   hasEmployeeHistory = serializers.BooleanField()
   hasReceivedTreatment = serializers.BooleanField()
-  hasHealthcareCoverage = serializers.BooleanField()
   hasBenefits = serializers.BooleanField()
   wasDiagnosed = serializers.BooleanField()
   openToDiscussionWorkspace = serializers.BooleanField()
@@ -33,7 +32,6 @@ class EmployeeAnswerSerializer(serializers.ModelSerializer):
       'hasFamilyHistory',
       'hasEmployeeHistory',
       'hasReceivedTreatment',
-      'hasHealthcareCoverage',
       'hasBenefits',
       'wasDiagnosed',
       'openToDiscussWorkspace',

@@ -34,7 +34,6 @@ class EmployeeAnswer(models.Model):
     hasFamilyHistory = models.BooleanField(null = True)
     hasEmployeeHistory = models.BooleanField(null = True)
     hasReceivedTreatment = models.BooleanField(null = True)
-    hasHealthcareCoverage = models.BooleanField(null = True)
     hasBenefits = models.BooleanField(null = True)
     wasDiagnosed = models.BooleanField(null = True)
     openToDiscussWorkspace = models.BooleanField(null = True)
