@@ -11,8 +11,8 @@ class Preprocessor():
              "I'm a man why didn't you make this a drop down question. You should of asked sex? And I would of answered yes please. Seriously how much text can this take? ", 
              "mail", "M|", "male ",  "Cis Male", "cisdude", "cis man", "AMAB", "MALE"] 
   
-  def age(self, birthDate):
-    return date.today().year - birthDate.year
+  def age(self, age):
+    return age
 
   def familyHistory(self, familyHistory):
     if familyHistory:
@@ -135,7 +135,7 @@ class Preprocessor():
     return 0
 
   def difficultMedicalLeave(self, medicalLeave):
-    if medicalLeave == 'Difficult to ask for a medical leav':
+    if medicalLeave == 'Difficult to ask for a medical leave':
       return 1
     return 0
 

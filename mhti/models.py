@@ -29,11 +29,16 @@ class Company(models.Model):
 
 class EmployeeAnswer(models.Model):
     companyId = models.IntegerField(null = True)
-    birthDate = models.DateField(null = True)
+    age = models.IntegerField(null = True)
     gender = models.CharField(null = True, max_length=100)
     hasFamilyHistory = models.BooleanField(null = True)
     hasEmployeeHistory = models.BooleanField(null = True)
+    hasReceivedTreatment = models.BooleanField(null = True)
     hasHealthcareCoverage = models.BooleanField(null = True)
     hasBenefits = models.BooleanField(null = True)
     wasDiagnosed = models.BooleanField(null = True)
-
+    openToDiscussionWorkspace = models.BooleanField(null = True)
+    talkToSupervisor = models.CharField(null = True, max_length=100)
+    talkToCoworker = models.CharField(null = True, max_length=100)
+    race = models.CharField(null = True, max_length=100)
+    medicalLeave = models.CharField(null = True, max_length=100)
