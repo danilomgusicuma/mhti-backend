@@ -136,7 +136,8 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ORIGIN_WHITELIST = [
-     'http://localhost:3000'
+     'http://localhost:3000',
+     'https://safer-spaces-survey.herokuapp.com'
 ]
 
 django_heroku.settings(locals())
