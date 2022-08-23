@@ -17,7 +17,7 @@ class EmployeeAnswerSerializer(serializers.ModelSerializer):
   hasReceivedTreatment = serializers.BooleanField()
   hasBenefits = serializers.BooleanField()
   wasDiagnosed = serializers.BooleanField()
-  openToDiscussionWorkspace = serializers.BooleanField()
+  openToDiscussWorkspace = serializers.BooleanField()
   talkToSupervisor = serializers.CharField()
   talkToCoworker = serializers.CharField()
   race = serializers.CharField()

@@ -129,8 +129,8 @@ class Preprocessor():
       return 1
     return 0
 
-  def openToDiscussionWorkspace(self, openToDiscussionWorkspace):
-    if openToDiscussionWorkspace:
+  def openToDiscussWorkspace(self, openToDiscussWorkspace):
+    if openToDiscussWorkspace:
       return 1
     return 0
 

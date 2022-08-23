@@ -36,7 +36,7 @@ def analysis_result_view(request):
           preprocessor.hasReceivedTreatment(employeeAnswer["hasReceivedTreatment"]),
           preprocessor.isTechCompany(company.isTech),
           preprocessor.hasBenefits(employeeAnswer["hasBenefits"]),
-          preprocessor.openToDiscussionWorkspace(employeeAnswer["openToDiscussionWorkspace"]),
+          preprocessor.openToDiscussWorkspace(employeeAnswer["openToDiscussWorkspace"]),
           preprocessor.talkToSupervisor(employeeAnswer["talkToSupervisor"]),
           preprocessor.talkToCoworker(employeeAnswer["talkToCoworker"]),
           preprocessor.isAgender(employeeAnswer["gender"]),
@@ -73,4 +73,6 @@ def analysis_result_view(request):
         input = np.array(input_array)
         prediction = model.predict(input).tolist()[0][1]
         response = JsonResponse({'probabilityToHaveMentalDisorder':prediction})
+      else:
+        response = serializer.errors
     return HttpResponse(response)
