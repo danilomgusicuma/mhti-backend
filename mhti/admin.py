@@ -10,13 +10,19 @@ class CompanyAdmin(admin.ModelAdmin):
 class EmployeeAnswerAdmin(admin.ModelAdmin):
   list_display = (
     'companyId',
-    'birthDate',
+    'age',
     'gender',
     'hasFamilyHistory',
     'hasEmployeeHistory',
+    'hasReceivedTreatment',
     'hasHealthcareCoverage',
     'hasBenefits',
     'wasDiagnosed',
+    'openToDiscussWorkspace',
+    'talkToSupervisor',
+    'talkToCoworker',
+    'race',
+    'medicalLeave'
   )
 
 # Register your models here.

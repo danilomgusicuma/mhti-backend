@@ -10,23 +10,35 @@ class AnalysisResultSerializer(serializers.ModelSerializer):
 class EmployeeAnswerSerializer(serializers.ModelSerializer):
   
   companyId = serializers.IntegerField()
-  birthDate = serializers.DateField()
+  age = serializers.IntegerField()
   gender = serializers.CharField()
   hasFamilyHistory = serializers.BooleanField()
   hasEmployeeHistory = serializers.BooleanField()
+  hasReceivedTreatment = serializers.BooleanField()
   hasHealthcareCoverage = serializers.BooleanField()
   hasBenefits = serializers.BooleanField()
   wasDiagnosed = serializers.BooleanField()
+  openToDiscussionWorkspace = serializers.BooleanField()
+  talkToSupervisor = serializers.CharField()
+  talkToCoworker = serializers.CharField()
+  race = serializers.CharField()
+  medicalLeave = serializers.CharField()
   
   class Meta:
     model = EmployeeAnswer
     fields = [
       'companyId',
-      'birthDate',
+      'age',
       'gender',
       'hasFamilyHistory',
       'hasEmployeeHistory',
+      'hasReceivedTreatment',
       'hasHealthcareCoverage',
       'hasBenefits',
-      'wasDiagnosed'
+      'wasDiagnosed',
+      'openToDiscussWorkspace',
+      'talkToSupervisor',
+      'talkToCoworker',
+      'race',
+      'medicalLeave'
     ]

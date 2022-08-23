@@ -28,7 +28,7 @@ def analysis_result_view(request):
 
         # saving the answers 
         serializer.save()
-        model = load_model("george")
+        model = load_model("alceu")
         input_array = [[
           preprocessor.age(employeeAnswer["age"]),
           preprocessor.familyHistory(employeeAnswer["hasFamilyHistory"]),
