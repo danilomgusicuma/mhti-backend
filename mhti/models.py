@@ -37,7 +37,7 @@ class EmployeeAnswer(models.Model):
     hasHealthcareCoverage = models.BooleanField(null = True)
     hasBenefits = models.BooleanField(null = True)
     wasDiagnosed = models.BooleanField(null = True)
-    openToDiscussionWorkspace = models.BooleanField(null = True)
+    openToDiscussWorkspace = models.BooleanField(null = True)
     talkToSupervisor = models.CharField(null = True, max_length=100)
     talkToCoworker = models.CharField(null = True, max_length=100)
     race = models.CharField(null = True, max_length=100)
