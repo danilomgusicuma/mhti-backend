@@ -40,5 +40,20 @@ class EmployeeAnswerSerializer(serializers.ModelSerializer):
       'talkToSupervisor',
       'talkToCoworker',
       'race',
-      'medicalLeave'
+      'medicalLeave',
+      'interestOrPleasure',
+      'downDepressedHopeless',
+      'troubleFallingAsleep',
+      'tiredLittleEnergy',
+      'poorAppetiteOvereating',
+      'feelingBad',
+      'troubleConcentrating',
+      'slowOrFast',
+      'betterOfDead',
+      'nervousAnxious',
+      'cantStopWorrying',
+      'worryingToMuch',
+      'troubleRelaxing',
+      'easilyAnnoyed',
+      'feelingAfraid'
     ]
